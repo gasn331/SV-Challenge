@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<businessObject>
+	<propertyGroup>
+		<!-- OAuth-specific properties -->
+		<property name="OAuthProvider" type="string" />
+		<property name="AccessToken" type="string" />
+		<property name="RefreshToken" type="string" />
+		<property name="TokenExpiration" type="System.DateTime" />
+	</propertyGroup>
+	<script>
+		CREATE TABLE OAuthIntegration (
+		OAuthProvider TEXT,
+		AccessToken TEXT,
+		RefreshToken TEXT,
+		TokenExpiration TEXT
+		);
+	</script>
+</businessObject>
